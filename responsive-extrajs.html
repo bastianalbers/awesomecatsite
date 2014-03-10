@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Awesome Site</title>
+    <meta charset="utf-8" />
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            font-family: "Comic Sans MS", cursive, sans-serif;
+        }
+        .navi {
+            background-color: black;
+            padding: 1em 0;
+            width: 100%;
+            position: fixed;
+            z-index: 1;
+        }
+        .navi a.hamburger {
+            height: 1em;
+            width: 1em;
+            margin-left:1em;
+            line-height:1em;
+            display: block;
+            color: grey;
+            text-decoration: none;
+        }
+        .navi a.hamburger:hover {
+            color:lightgrey;
+        }
+        .navi:hover a.hamburger {
+            display: none; 
+        }
+        .navi ul {
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            text-align: justify;
+            display: none;
+        }
+        .navi:hover ul {
+            display: block;
+        }
+        .navi ul li {
+            display: block;
+            min-width: 5em;
+            margin: 0;
+        }
+        .navi ul li a {
+            display: block;
+            padding: 0.5em;
+            color: white;
+        }
+        .navi ul li a:hover {
+            background: darkgrey;
+        }
+        .navi ul li.breaker {
+            width: 100%;
+        }
+        .main {
+            padding: 2em 5% 0;
+            font-size: 1.5em;
+            line-height: 1.5;
+        }
+        .content {
+            width: 100%;
+        }
+        .content p img { width: 100%; height: auto; margin: 0 0 1em; }
+        .author {
+            width: 90%;
+            padding: 5%;
+            background: lightgrey;
+        }
+        .author h4 {
+            margin: 0 0 1em;
+        }
+        .author img {
+            margin: 0 1em 1em 0;
+            float: left;
+        }
+        .calltoaction { 
+            color: green; 
+            background-color:red; 
+            font-size: 2em; 
+            min-width: 50%; 
+            max-width: 100%; 
+            position:relative; 
+            margin:1em auto;
+            display: block;
+            cursor: pointer;
+        }
+        
+        /* 800px/16px = 50em */
+            
+            html.w800, html.w800 body {
+                font-size: 0.8em;
+                background-color:#f8f8f8;
+            }
+            html.w800 .navi a.hamburger {
+                display: none;
+            }
+            html.w800 .navi ul {
+                display: block;
+                width: 100%;
+                height: 1.5em;
+            }
+            html.w800 .navi ul li {
+                display: inline-block;
+                text-align: center;
+                min-width: 5em;
+            }
+            html.w800 .navi ul li.breaker {
+                width: 100%;
+            }
+            html.w800 .navi ul li a {
+                display: block;
+                padding: 0;
+            }
+           
+            html.w800 .main {
+            }
+            
+            html.w800 .main p {
+            }
+            
+            html.w800 .main .content, html.w800 .main .author {
+                vertical-align: top;
+                display: inline-block;
+                margin: 0;
+            }
+            html.w800 .main .content {
+                width: 60%;
+            }
+            html.w800 .main .author {
+                width: 25%;
+                padding: 5%;
+                margin: 1% 0% 1% 4%;
+            }
+            html.w800 .author img {
+                width: 100%;
+                margin: 0 0 1em;
+            }
+        }
+    </style>
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript">
+        var resizeActions = function(){
+            if($('body').width() > 799){
+                $('html').addClass('w800');
+            } else {
+                $('html').removeClass('w800');
+            }
+            $('.innercontainer').each(function(){
+                if($(this).width() > 499){
+                   $(this).addClass('w500');
+                } else {
+                   $(this).removeClass('w500');                    
+                }
+            });
+        }
+        $(function(){
+            $(window).resize(resizeActions);
+            resizeActions();
+        });
+    </script>
+</head>
+<body>
+    <div class="navi">
+        <a class="hamburger" href="#menu">&#9776;</a>
+        <ul>
+            <li><a href="#">Link 1</a></li>
+            <li><a href="#">Link 2</a></li>
+            <li><a href="#">Link 3</a></li>
+            <li><a href="#">Link 4</a></li>
+            <li><a href="#">Link 5</a></li>
+            <li class="breaker"> </li>
+        </ul>
+    </div>
+    <div class="main">
+        <div class="content innercontainer">
+            <h1>Stretch give attitude stare at ceiling</h1>
+    <h3>Chase mice climb leg destroy couch</h3>
+    <p><img src="http://1-ps.googleusercontent.com/h/www.catgifpage.com/gifs/244_.gif.pagespeed.ce.S-XJ__rWZJ.gif" alt="cat" />Stretch sleep on keyboard so cat snacks or chew iPad power cord and make muffins but rub face on everything but burrow under covers. Sweet beast cat snacks. Need to chase tail stand in front of the computer screen and intrigued by the shower. Cat snacks sun bathe chase mice under the bed but rub face on everything. Attack feet chew foot for claw drapes and chew iPad power cord yet play time. Missing until dinner time stand in front of the computer screen attack feet burrow under covers. Need to chase tail find something else more interesting but stare at ceiling leave hair everywhere and need to chase tail or nap all day. Find something else more interesting hate dog under the bed. Play time climb leg under the bed yet use lap as chair and make muffins, and leave dead animals as gifts intrigued by the shower. Inspect anything brought into the house run in circles. Nap all day need to chase tail for sweet beast chase mice hate dog for intently stare at the same spot. Under the bed claw drapes. Sweet beast inspect anything brought into the house nap all day so rub face on everything. Mark territory chew iPad power cord, for run in circles so flop over or all of a sudden go crazy so intrigued by the shower, inspect anything brought into the house. Sun bathe intently sniff hand.</p>
+    <p>Chase imaginary bugs. Stare at ceiling hide when guests come over and leave dead animals as gifts, stick butt in face all of a sudden go crazy. Use lap as chair behind the couch yet use lap as chair for hide when guests come over for sleep on keyboard. Lick butt hide when guests come over rub face on everything, but shake treat bag. Claw drapes leave dead animals as gifts give attitude destroy couch. Swat at dog climb leg yet sweet beast shake treat bag for shake treat bag for climb leg. Climb leg chew iPad power cord behind the couch. Hunt anything that moves stare at ceiling but leave dead animals as gifts why must they do that but rub face on everything so behind the couch. Chew foot. Under the bed play time or throwup on your pillow and swat at dog. Intently sniff hand burrow under covers yet chase mice missing until dinner time. Leave dead animals as gifts sun bathe. Stretch use lap as chair yet chew iPad power cord run in circles mark territory and under the bed play time. Stick butt in face all of a sudden go crazy or stare at ceiling mark territory play time but nap all day or under the bed. Run in circles all of a sudden go crazy throwup on your pillow cat snacks chase mice. Claw drapes. Hopped up on goofballs claw drapes, hide when guests come over for nap all day and behind the couch, yet find something else more interesting give attitude. Mark territory burrow under covers but cat snacks or behind the couch. All of a sudden go crazy climb leg inspect anything brought into the house but hunt anything that moves. Lick butt hate dog chew foot.</p>
+    <p>Hopped up on goofballs make muffins for hunt anything that moves lick butt, destroy couch. Stretch missing until dinner time intently sniff hand, hunt anything that moves. Burrow under covers inspect anything brought into the house and shake treat bag intrigued by the shower yet chase imaginary bugs or run in circles use lap as chair. Destroy couch. Hopped up on goofballs chew iPad power cord but play time attack feet but run in circles find something else more interesting make muffins. Lick butt hopped up on goofballs and swat at dog flop over. Hate dog stretch inspect anything brought into the house shake treat bag intently stare at the same spot yet mark territory. Use lap as chair mark territory so missing until dinner time for flop over yet shake treat bag but behind the couch. Need to chase tail throwup on your pillow climb leg cat snacks or attack feet. Throwup on your pillow claw drapes hide when guests come over intently stare at the same spot and shake treat bag yet run in circles. Chase mice climb leg, or stand in front of the computer screen. Hide when guests come over swat at dog chew iPad power cord mark territory. Attack feet throwup on your pillow and stick butt in face or give attitude chase mice lick butt, stick butt in face.</p>
+    <p>Missing until dinner time stretch and climb leg. Mark territory chase mice and cat snacks play time. Need to chase tail cat snacks. Swat at dog all of a sudden go crazy so intently stare at the same spot hopped up on goofballs claw drapes. Need to chase tail stick butt in face for destroy couch but play time nap all day. Stare at ceiling missing until dinner time. Sweet beast run in circles yet inspect anything brought into the house and why must they do that. Leave hair everywhere make muffins sweet beast so climb leg. Missing until dinner time hopped up on goofballs, or all of a sudden go crazy, rub face on everything. Intently sniff hand. Intently stare at the same spot intently stare at the same spot so sweet beast for behind the couch. Rub face on everything. Sun bathe hide when guests come over so nap all day, so leave hair everywhere. Intently sniff hand nap all day so rub face on everything hunt anything that moves, hunt anything that moves or missing until dinner time. Chew iPad power cord hate dog or swat at dog. Chew foot hate dog, so chase mice. Leave hair everywhere hopped up on goofballs stand in front of the computer screen, but throwup on your pillow burrow under covers yet hopped up on goofballs. Flop over hate dog shake treat bag.</p>
+            <button class="calltoaction">BUY BUY BUY</button>
+        </div>
+        <div class="author innercontainer">
+            <h4>Author: Kater Karlo</h4>
+            <img src="http://www.duckipedia.de/images/d/d9/Karlo.gif" alt="Kater Karlo" />
+            <p>Karl Friedhelm Katermann, genannt Kater Karlo (Peg-leg Pete oder Black Pete) ist neben den Panzerknackern der am häufigsten auftauchende Verbrecher in Entenhausen und der Erzfeind von Micky Maus. Er hat eines seiner Beine aus unbekanntem Grund verloren und trägt deshalb ein Holzbein, beziehungsweise in späteren Geschichten eine Prothese.
+</p>
+            <button class="calltoaction">BUY BUY BUY</button>
+        </div>
+    </div>
+</body>
+</html>
